@@ -8,9 +8,15 @@ The API is built using Flask, a lightweight Python web framework.
 
 ## Database Schema
 The application uses a MySQL database named `Users` with two tables:
-### Users Table
+### Configuration
+
+1. Create a MySQL database named Users.
+
+2. Update the SQLALCHEMY_DATABASE_URI in app.py with your MySQL server configuration, including username, password, host, port, and the database name.
+   
+### UsersData Table
 The `users` table is used to store user information.
-### Key-Value Data Table
+### key_value_store Table
 The `key_value_data` table is used to store key-value pairs.
 ## Getting Started
 
@@ -29,10 +35,7 @@ The `key_value_data` table is used to store key-value pairs.
 
     `cd backend-system`
 3. Install Python packages:`pip install -r requirements.txt`
-### Configuration
-Configure the application as follows:
-Create a MySQL database named Users.
-Update the SQLALCHEMY_DATABASE_URI in app.py with your MySQL server configuration, including username, password, host, port, and the database name.
+
 ### Running the Application
  ```bash
 python app.py
