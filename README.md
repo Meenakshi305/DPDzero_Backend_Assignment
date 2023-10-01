@@ -12,7 +12,7 @@ The application uses a MySQL database named `Users` with two tables:
 
 1. Create a MySQL database named Users.
 
-2. Update the SQLALCHEMY_DATABASE_URI in app.py with your MySQL server configuration, including username, password, host, port, and the database name.
+2. Update the `SQLALCHEMY_DATABASE_URI` in app.py with your MySQL server configuration, including username, password, host, port, and the database name.
    
 ### UsersData Table
 The `users` table is used to store user information.
