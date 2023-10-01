@@ -36,6 +36,7 @@ The app will be accessible at http://localhost:5000.
 
 ### Testing
 The test_scripts.py file contains test cases for the API. To execute the tests, 
-run the following command: python test_scripts.py
+run the following command:
+ python test_scripts.py
 
 
