@@ -26,9 +26,9 @@ The `key_value_data` table is used to store key-value pairs.
    git clone https://github.com/your-username/backend-system.git
 
 2. Navigate to the project directory:
- ```bash
-    cd backend-system
-3. Install Python packages:\*pip install -r requirements.txt*\
+
+    `cd backend-system`
+3. Install Python packages:`pip install -r requirements.txt`
 ### Configuration
 Configure the application as follows:
 Create a MySQL database named Users.
@@ -36,14 +36,11 @@ Update the SQLALCHEMY_DATABASE_URI in app.py with your MySQL server configuratio
 ### Running the Application
  ```bash
 python app.py
-
-The app will be accessible at  
- ```bash 
-http://localhost:5000.
+```
+The app will be accessible at   'http://localhost:5000.
 
 ### Testing
 The test_scripts.py file contains test cases for the API. To execute the tests, 
-run the following command:
- \*python test_scripts.py*\
+run the following command:`python test_scripts.py`
 
 
