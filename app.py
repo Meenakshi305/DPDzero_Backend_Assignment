@@ -21,18 +21,6 @@ session = Session()
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-class Employ(db.Model):
-    __tablename__ = 'employ'
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    job_title = db.Column(db.String(100))
-    salary = db.Column(db.Float)
-
-    def __init__(self, name, job_title, salary):
-        self.name = name
-        self.job_title = job_title
-        self.salary = salary
-
 
 # Define your User model
 class User(db.Model):
@@ -318,8 +306,8 @@ def delete_data(key):
 
 
 if __name__ == "__main__":
-    with app.app_context():
+    #with app.app_context():
         # Create the database tables using Flask-Migrate
-        db.create_all()
+        #db.create_all()
 
     app.run(debug=True, port=5000)

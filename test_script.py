@@ -5,12 +5,12 @@ url = "http://localhost:5000"
 def test_register_user():
     endpoint = "/api/register"
     data = {
-        "username": "test2213_user",
-        "email": "test2213_user@example.com",
+        "username": "tes1t2213_user",
+        "email": "test12213_user@example.com",
         "password": "test211_password",
-        "full_name": "Test22 User",
+        "full_name": "Tes1t22 User",
         "age": 30,
-        "gender": "ght"
+        "gender": "ghta"
     }
     response = requests.post(url + endpoint, json=data)
     print(f"Response Status Code: {response.status_code}")
